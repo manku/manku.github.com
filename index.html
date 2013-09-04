@@ -1,1 +1,83 @@
-婕簱
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="shortcut icon" href="favicon.ico" >
+<meta name="description" content="漫库 享自由漫画"/> 
+<meta name="keywords" content="漫库 漫画 爆笑校园 "/>
+
+<title>漫库</title>
+	<style type="text/css">
+		* {margin:0;padding:0;}
+		body {
+			font-size: 12px;
+		}
+		a {color:#333;}
+		ul {list-style:none;}
+		#bj{height:325px}
+		#warp{
+			margin-left:auto;
+			margin-right:auto;
+			width:1280px;
+			min-height:1536px;
+			background:url(images/011.png) no-repeat;
+		}
+		
+		#marquee {
+			position:relative;
+			margin-left:auto;
+			margin-right:auto;
+			top: 342px;
+			width: 680px;
+			height: 402px;
+			overflow: hidden;
+			background: #333;
+		}
+		#marquee ul li {float:left;}
+		#marquee ul li img {display:block;}
+		#marNav {
+			position:relative;
+			top: 744px;
+			left: 598px;
+		}
+		#marNav li {float:left;margin:0 3px;width:16px;height:16px;background:#333;border:1px solid #FFF;cursor:pointer;
+					line-height:16px;font-family:Arial;font-size:10px;color:#FFF;text-align:center;}
+		#marNav li.navOn {background:#FC6;}
+
+		
+    </style>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/kxbdSuperMarquee.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			//一次横向滚动一个
+			//一次滚动一屏
+			$('#marquee').kxbdSuperMarquee({
+				distance:680,
+				time:3,
+				navId:'#marNav',
+				direction:'left'
+			});
+
+		});
+
+	</script>
+
+
+</head>
+  
+<body>
+
+<div id="warp">
+      <div id="marquee">
+            <ul>
+                 <li><img src="images/01_03.png" width="680" height="402"></li>
+                 <li><img src="images/manku-web03_03.png" width="680" height="402"></li>
+            </ul>
+      </div>
+   </div>
+</div>
+
+</body>
+</html>
